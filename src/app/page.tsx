@@ -664,7 +664,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    Full-End Developer
+                    Full-Stack Developer
                   </motion.h3>
 
                   <motion.div
