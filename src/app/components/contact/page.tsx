@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("mgegrzpv"); // 👈 Form ID بتاعك من Formspree
+  const [state, handleSubmit] = useForm("mgegrzpv"); 
 
   const [formData, setFormData] = useState({
     name: "",
@@ -19,7 +19,7 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  // ✅ لما الفورم يتبعت بنجاح، نفضي الحقول
+
   useEffect(() => {
     if (state.succeeded) {
       setFormData({ name: "", email: "", message: "" });
